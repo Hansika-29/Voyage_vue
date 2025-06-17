@@ -5,7 +5,7 @@ const dummyItineraries = [
     cities: ["Rome", "Florence", "Venice"],
     type: "Cultural",
     days: "5-7 Days",
-    pricePerDay: 120,
+    pricePerDay: 9000,
     image: "https://source.unsplash.com/featured/?rome",
     summary: "Explore the rich history of Rome, the art of Florence, and the romantic canals of Venice."
   },
@@ -15,7 +15,7 @@ const dummyItineraries = [
     cities: ["Tokyo", "Kyoto", "Osaka"],
     type: "Family",
     days: "7-10 Days",
-    pricePerDay: 150,
+    pricePerDay: 8000,
     image: "https://source.unsplash.com/featured/?tokyo",
     summary: "Experience the modern wonders of Tokyo, traditional Kyoto temples, and Osaka’s street food scene."
   },
@@ -25,7 +25,7 @@ const dummyItineraries = [
     cities: ["Paris", "Nice", "Lyon"],
     type: "Romantic",
     days: "5-7 Days",
-    pricePerDay: 140,
+    pricePerDay: 9000,
     image: "https://source.unsplash.com/featured/?paris",
     summary: "Stroll through Parisian streets, enjoy coastal charm in Nice, and gourmet delights in Lyon."
   },
@@ -35,7 +35,7 @@ const dummyItineraries = [
     cities: ["Delhi", "Agra", "Jaipur"],
     type: "Cultural",
     days: "3-5 Days",
-    pricePerDay: 80,
+    pricePerDay: 4000,
     image: "https://source.unsplash.com/featured/?india",
     summary: "Discover the heritage circuit of Delhi, the Taj Mahal in Agra, and Jaipur’s royal palaces."
   },
@@ -45,7 +45,7 @@ const dummyItineraries = [
     cities: ["Bangkok", "Phuket", "Chiang Mai"],
     type: "Beaches",
     days: "5-7 Days",
-    pricePerDay: 100,
+    pricePerDay: 5000,
     image: "https://source.unsplash.com/featured/?thailand",
     summary: "Relax on Phuket’s beaches, explore vibrant Bangkok, and unwind in Chiang Mai’s serenity."
   },
@@ -55,7 +55,7 @@ const dummyItineraries = [
     cities: ["New York", "Los Angeles", "San Francisco"],
     type: "Adventure",
     days: "7-10 Days",
-    pricePerDay: 180,
+    pricePerDay: 11000,
     image: "https://source.unsplash.com/featured/?usa",
     summary: "From NYC’s skyline to LA’s glam and SF’s tech-savvy charm – all in one trip."
   },
@@ -65,7 +65,7 @@ const dummyItineraries = [
     cities: ["Sydney", "Melbourne", "Cairns"],
     type: "Adventure",
     days: "5-7 Days",
-    pricePerDay: 160,
+    pricePerDay: 10000,
     image: "https://source.unsplash.com/featured/?australia",
     summary: "Dive into the Great Barrier Reef, walk around Sydney Opera House, and sip coffee in Melbourne."
   },
@@ -75,7 +75,7 @@ const dummyItineraries = [
     cities: ["Barcelona", "Madrid", "Seville"],
     type: "Romantic",
     days: "5-7 Days",
-    pricePerDay: 130,
+    pricePerDay: 9000,
     image: "https://source.unsplash.com/featured/?spain",
     summary: "Enjoy Gaudi’s Barcelona, Madrid’s royal ambiance, and Seville’s flamenco culture."
   },
@@ -85,7 +85,7 @@ const dummyItineraries = [
     cities: ["Zurich", "Lucerne", "Interlaken"],
     type: "Solo",
     days: "3-5 Days",
-    pricePerDay: 200,
+    pricePerDay: 12000,
     image: "https://source.unsplash.com/featured/?switzerland",
     summary: "Mountains, lakes, and charming villages await in this solo-friendly itinerary."
   },
@@ -95,7 +95,7 @@ const dummyItineraries = [
     cities: ["Rio de Janeiro", "São Paulo", "Salvador"],
     type: "Adventure",
     days: "7-10 Days",
-    pricePerDay: 110,
+    pricePerDay: 8000,
     image: "https://source.unsplash.com/featured/?brazil",
     summary: "Dance to samba in Rio, explore São Paulo’s culture, and relax on Salvador’s beaches."
   },
