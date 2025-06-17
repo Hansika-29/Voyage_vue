@@ -1,13 +1,28 @@
-import React, { useRef } from "react";
-import { useReactToPrint } from "react-to-print";
+import React, { useRef, useEffect } from "react";
+import html2pdf from "html2pdf.js";
 
 export default function GeneratedItinerary({ data, onClose }) {
   const itineraryRef = useRef();
 
-  const handleDownloadPDF = useReactToPrint({
-    content: () => itineraryRef.current,
-    documentTitle: `Itinerary_${data?.country || "Trip"}`,
-  });
+  // Lock background scroll when modal is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  const handleDownloadPDF = () => {
+    const element = itineraryRef.current;
+    const opt = {
+      margin: 0.5,
+      filename: `Itinerary_${data?.country || "Trip"}.pdf`,
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+    };
+    html2pdf().set(opt).from(element).save();
+  };
 
   if (
     !data ||
@@ -53,8 +68,9 @@ export default function GeneratedItinerary({ data, onClose }) {
   const typeList = Array.isArray(type) ? type : [type];
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 overflow-auto flex justify-center items-center p-4">
-      <div className="bg-white rounded-xl p-6 max-w-4xl w-full shadow-lg relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
+      <div className="bg-white rounded-xl max-w-4xl w-full shadow-lg relative mt-8 max-h-[90vh] overflow-y-auto">
+        {/* Close button */}
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-lg"
@@ -62,7 +78,8 @@ export default function GeneratedItinerary({ data, onClose }) {
           ✕
         </button>
 
-        <div ref={itineraryRef} className="max-h-[75vh] overflow-y-auto space-y-6 p-2">
+        {/* Content to convert to PDF */}
+        <div ref={itineraryRef} className="space-y-6 p-6 text-gray-800 font-sans">
           <h2 className="text-2xl font-bold text-indigo-700 mb-2">
             📍 {country} — {typeList.join(", ")} Trip
           </h2>
@@ -115,7 +132,8 @@ export default function GeneratedItinerary({ data, onClose }) {
           </div>
         </div>
 
-        <div className="mt-6 flex justify-between">
+        {/* Action Buttons */}
+        <div className="mt-6 flex justify-between px-6 pb-6">
           <button
             onClick={onClose}
             className="px-4 py-2 bg-gray-200 text-gray-700 rounded hover:bg-gray-300"

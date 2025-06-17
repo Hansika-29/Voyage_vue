@@ -137,10 +137,10 @@ export default function AuthModal({ onClose, onSuccess }) {
               Send OTP
             </button>
 
-            <div className="text-center text-sm text-gray-400">OR</div>
+            <div className="text-center text-sm text-black-400">OR</div>
 
             <button
-              className="btn w-full bg-white border text-black hover:bg-gray-100"
+              className="btn w-full bg-white border text-black hover:bg-darkblue-100"
               onClick={handleGoogleLogin}
             >
               <img
