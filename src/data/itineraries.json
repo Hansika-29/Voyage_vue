@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "country": "Japan",
+    "cities": ["Tokyo", "Kyoto", "Osaka"],
+    "days": 7,
+    "pricePerDay": 120,
+    "type": "Cultural",
+    "description": "Explore vibrant cities, serene temples, and traditional cuisine.",
+    "image": "https://source.unsplash.com/featured/?japan"
+  },
+  {
+    "id": "2",
+    "country": "France",
+    "cities": ["Paris", "Nice", "Lyon"],
+    "days": 5,
+    "pricePerDay": 150,
+    "type": "Romantic",
+    "description": "Romantic getaway with scenic walks, art, and fine dining.",
+    "image": "https://source.unsplash.com/featured/?france"
+  },
+  {
+    "id": "3",
+    "country": "India",
+    "cities": ["Jaipur", "Agra", "Delhi"],
+    "days": 6,
+    "pricePerDay": 80,
+    "type": "Historical",
+    "description": "Walk through ancient forts, palaces, and bustling markets.",
+    "image": "https://source.unsplash.com/featured/?india"
+  },
+  {
+    "id": "4",
+    "country": "Thailand",
+    "cities": ["Bangkok", "Phuket", "Chiang Mai"],
+    "days": 4,
+    "pricePerDay": 95,
+    "type": "Beach",
+    "description": "White-sand beaches, tropical adventures, and nightlife.",
+    "image": "https://source.unsplash.com/featured/?thailand"
+  },
+  {
+    "id": "5",
+    "country": "Italy",
+    "cities": ["Rome", "Venice", "Florence"],
+    "days": 10,
+    "pricePerDay": 130,
+    "type": "Family",
+    "description": "Cultural landmarks, food tours, and family-friendly sights.",
+    "image": "https://source.unsplash.com/featured/?italy"
+  }
+]
